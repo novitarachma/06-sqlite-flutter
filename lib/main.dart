@@ -1,22 +1,20 @@
+//kode utama Aplikasi tampilan awal
 import 'package:flutter/material.dart';
-import 'package:database_sqlite/ui/home.dart';
+import 'package:database_sqlite/home.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+//package letak folder Anda
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-// This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Tambahkan Item - Rachma Novita Anggreani | 2031710062',
+      title: 'Tambahkan Item',
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: const Home(),
+      home: Home(),
     );
   }
 }
